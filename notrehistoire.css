@@ -1,0 +1,121 @@
+body{
+	background-color:#F2F3F3;
+	background:	background-size: 100%;
+	 font-size: 16px;
+	 margin : 0 ;
+}
+@media (min-width: 800px) {
+    body {/* styles pour les écrans de largeur supérieure à 800px */
+        font-size: 18px;
+    }
+}
+@media (max-width: 600px) {
+    body {/* styles pour les écrans de largeur inférieure à 600px */
+        font-size: 14px;
+    }
+}
+na
+header{
+	background-color: #F2F3F3;
+	text-align: center;
+}
+
+
+.burger-menu-button {
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: none; /* cacher le menu burger par défaut */
+}
+
+
+.burger-menu-button:hover .burger-menu {
+  display: block; /* Afficher le menu burger lorsque l'utilisateur clique sur le bouton */
+}
+
+nav {
+  background-color: #f00202; /* Couleur de fond du menu */
+  display: flex; /* Afficher les éléments du menu côte à côte */
+  justify-content: space-between; /* Aligner les éléments du menu sur les deux côtés de la nav */
+}
+
+nav ul {
+  list-style: none; /* Enlever les puces des éléments de la liste */
+  margin: 5px; /* Enlever les marges */
+  padding: 5px; /* Enlever les espacements */
+  display: flex; /* Afficher les éléments de la liste côte à côte */
+ 
+}
+
+nav li {
+  margin: 10px 10px; /* Ajouter une marge à gauche et à droite de chaque élément */
+
+}
+
+nav a {
+  color: #fefefe; /* Couleur de text pour les liens */
+  text-decoration: none; /* Enlever la surbrillance des liens */
+  padding: 25px 100px; /* Ajouter un espacement intérieur aux liens */
+  transition: background-color 0.2s ease-in;  /* Ajouter une transition pour la couleur de fond */
+}
+
+nav a:hover { /* Appliquer les styles à utiliser lorsque l'utilisateur survole un lien */
+  background-color: #a30303; /* Couleur de fond lorsque l'utilisateur survole un lien */
+}
+
+.container {
+    grid-template-columns: 50% 50%;
+	width: 50%;
+	display: grid;
+    align-items: center;
+}
+
+.style{
+	font-size: 28px;
+	font-family: Times New Roman ,serif;
+	display: flex;
+	justify-content: center;
+}
+.limited-text {
+  width: 80%; /* définir la largeur de la zone */
+  margin: 0 auto; /* centrer la zone horizontalement */
+  border-right: 1px solid black; /* ajouter une bordure droite */
+  border-left: 1px solid black; /* ajouter une bordure gauche */
+  padding: 10px; /* ajouter un espace entre les bordures et le contenu */
+}
+p{ 
+font-size : 22px;}
+
+footer {
+  background-color: #333;
+  color: #fefefe;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+   
+}
+footer > * {
+    margin: 0 10px; /* ajoute un espacement de 10px entre les éléments */
+}
+.circle {
+  border-radius: 12%; /* met en forme le div en cercle */
+  width: 50px; /* largeur du cercle */
+  height: 50px; /* hauteur du cercle */
+  overflow: hidden; /* masque tout débordement */
+  text-align: center; /* centre l'image horizontalement */
+  line-height: 75px; /* centre l'image verticalement */
+  display: flex;
+  justify-content: center;
+}
+
+.circle img {
+  max-width: 100%;/* redimensionne l'image pour qu'elle s'adapte au conteneur */
+}
+a[href*="Mentions_légales"] {
+    display: inline-block;
+    text-align: center;
+	color: #fefefe;
+}
+
