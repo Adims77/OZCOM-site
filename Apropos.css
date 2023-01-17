@@ -1,0 +1,191 @@
+@media print {
+  /* styles pour l'impression */
+  .burger-menu-container, nav , footer {
+    display: none;
+  }
+  .cv {
+    width: 100%;
+    font-size: 12pt;
+  }
+}
+body{
+	background-color:#F2F3F3;
+	background:	background-size: 100%;
+	 font-size: 16px;
+	 margin : 0 ;
+}
+@media (min-width: 800px) {
+    body {/* styles pour les écrans de largeur supérieure à 800px */
+        font-size: 18px;
+    }
+}
+@media (max-width: 600px) {
+    body {/* styles pour les écrans de largeur inférieure à 600px */
+        font-size: 14px;
+    }
+}
+na
+header{
+	background-color: #F2F3F3;
+	text-align: center;
+}
+
+
+.burger-menu-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.burger-menu-button {
+  display: none; /* cacher le bouton par défaut */
+  padding: 0.5em 1em;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: none; /* cacher le menu burger par défaut */
+  background: #fff;
+  padding: 1em;
+}
+
+.burger-menu-icon {
+  width: 1.5em;
+  height: 0.25em;
+  background: #fff;
+  margin-bottom: 0.5em;
+}
+
+/* Afficher le bouton et le menu burger pour les écrans de petite taille */
+@media (max-width: 768px) {
+  .burger-menu-button {
+    display: block;
+  }
+}
+
+
+nav {
+  background-color: #f00202; /* Couleur de fond du menu */
+  display: flex; /* Afficher les éléments du menu côte à côte */
+  justify-content: space-between; /* Aligner les éléments du menu sur les deux côtés de la nav */
+}
+
+nav ul {
+  list-style: none; /* Enlever les puces des éléments de la liste */
+  margin: 5px; /* Enlever les marges */
+  padding: 5px; /* Enlever les espacements */
+  display: flex; /* Afficher les éléments de la liste côte à côte */
+ 
+}
+
+nav li {
+  margin: 10px 10px; /* Ajouter une marge à gauche et à droite de chaque élément */
+
+}
+
+nav a {
+  color: #fefefe; /* Couleur de text pour les liens */
+  text-decoration: none; /* Enlever la surbrillance des liens */
+  padding: 25px 100px; /* Ajouter un espacement intérieur aux liens */
+  transition: background-color 0.2s ease-in;  /* Ajouter une transition pour la couleur de fond */
+}
+
+nav a:hover { /* Appliquer les styles à utiliser lorsque l'utilisateur survole un lien */
+  background-color: #a30303; /* Couleur de fond lorsque l'utilisateur survole un lien */
+}
+.style{
+ font-style: italic;
+  font-size: 26px;
+  line-height: 25px;
+  padding-left: 30px;
+  border-left: 5px solid #ccc;
+  margin: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-item {
+  grid-column: span 1;
+}
+
+img.grid-item {
+   width:95%;
+}
+h1{  margin: 20px 0;
+display: flex;
+	justify-content: center;
+}
+
+#topBtn {
+  display: none; /* masquer le bouton par défaut */
+  position: fixed; /* positionner le bouton en haut à droite de la page */
+  bottom: 10px;
+  right: 15px;
+  z-index: 99; /* placer le bouton au-dessus du contenu */
+  font-size: 10px;
+  border: none;
+  outline: none;
+  background-color: #ff0000; /* couleur de fond */
+  color: white; /* couleur du texte */
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px; /* arrondir les bords */
+}
+
+#topBtn:hover {
+  background-color: #555; /* changer la couleur de fond lorsque l'utilisateur passe la souris dessus */
+}
+
+footer {
+  background-color: #333;
+  color: #fefefe;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+   
+}
+footer > * {
+    margin: 0 10px; /* ajoute un espacement de 10px entre les éléments */
+}
+.circle {
+  border-radius: 12%; /* met en forme le div en cercle */
+  width: 50px; /* largeur du cercle */
+  height: 50px; /* hauteur du cercle */
+  overflow: hidden; /* masque tout débordement */
+  text-align: center; /* centre l'image horizontalement */
+  line-height: 75px; /* centre l'image verticalement */
+  display: flex;
+  justify-content: center;
+}
+
+.circle img {
+  max-width: 100%;/* redimensionne l'image pour qu'elle s'adapte au conteneur */
+}
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+
+
